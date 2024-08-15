@@ -1,10 +1,11 @@
 import React from 'react';
+import AppRouter from './routes'; 
 
 function App() {
 
   return (
-    <div>
-      Hello World
+    <div className='flex justify-center items-center'>
+    <AppRouter/>
     </div>
   )
 }
