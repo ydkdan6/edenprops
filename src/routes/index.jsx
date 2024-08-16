@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from '../pages/HomePage';
 import LoginPage from '../pages/LoginPage';
+import ForgetPassword from '../pages/forgotPassword';
 import RegisterPage from '../pages/signUpPage';
 import Dashboard from '../pages/Dashboard';
 import AdminDashboard from '../pages/AdminDashboard';
@@ -16,6 +17,7 @@ const AppRouter = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
+        <Route path='/forgetpassword' element={<ForgetPassword/>} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/admin" element={<AdminDashboard />} />
         <Route path="/houses/:id" element={<HouseDetailsPage />} />
