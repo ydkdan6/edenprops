@@ -7,7 +7,7 @@ import './style.css';
 import googleIcon from '../../icons/google.png';  
 
 const LoginForm = () => {
-  const [email, setEmail] = useState('');
+  const [tel, setTel] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = (e) => {
@@ -45,8 +45,8 @@ const LoginForm = () => {
             id="number"
             className="input flex-1 px-4 py-2 rounded-lg border-none outline-none"
             placeholder="Enter Tel"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            value={tel}
+            onChange={(e) => setTel(e.target.value)}
           />
         </div>
       </div>
