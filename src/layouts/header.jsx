@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Button from '../utils/Button';
 
 const Header = () => {
@@ -18,20 +19,20 @@ const Header = () => {
 
         {/* Navigation Links */}
         <nav className="hidden md:flex space-x-8">
-          <a href="#" className="text-gray-800 hover:text-indigo-600">Home</a>
-          <a href="#" className="text-gray-800 hover:text-indigo-600">House Listing</a>
-          <a href="#" className="text-gray-800 hover:text-indigo-600">About Us</a>
-          <a href="#" className="text-gray-800 hover:text-indigo-600">Services</a>
-          <a href="#" className="text-gray-800 hover:text-indigo-600">Contact Us</a>
+          <Link to="#" className="text-gray-800 hover:scale-[1.2]">Home</Link>
+          <Link to="#" className="text-gray-800 hover:scale-[1.2]">House Listing</Link>
+          <Link to="#" className="text-gray-800 hover:scale-[1.2]">About Us</Link>
+          <Link to="#" className="text-gray-800 hover:scale-[1.2]">Services</Link>
+          <Link to="#" className="text-gray-800 hover:scale-[1.2]">Contact Us</Link>
         </nav>
 
         {/* Buttons */}
         <div className="hidden md:flex space-x-4">
           <Button className="text-black border bg-white border-orange-500 px-4 py-2 rounded-[26px] hover:bg-orange hover:text-white transition">
-            Login
+            <Link to='/login' className='text-black hover:text-black'>Login </Link>
           </Button>
           <Button className="bg-orange-500 text-white px-4 py-2 rounded-[26px] hover:bg-orange transition">
-            Sign Up
+            <Link to='/register' className='text-white hover:text-white'>Sign Up </Link>
           </Button>
         </div>
 
@@ -52,17 +53,17 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden">
           <nav className="bg-white shadow-lg">
-            <a href="#" className="block text-gray-800 px-4 py-2 hover:bg-orange-300 hover:text-black">Home</a>
-            <a href="#" className="block text-gray-800 px-4 py-2 hover:bg-orange-300 hover:text-black">House Listing</a>
-            <a href="#" className="block text-gray-800 px-4 py-2 hover:bg-orange-300 hover:text-black">About Us</a>
-            <a href="#" className="block text-gray-800 px-4 py-2 hover:bg-orange-300 hover:text-black">Services</a>
-            <a href="#" className="block text-gray-800 px-4 py-2 hover:bg-orange-300 hover:text-black">Contact Us</a>
+            <Link to="#" className="block text-gray-800 px-4 py-2 hover:bg-orange-300">Home</Link>
+            <Link to="#" className="block text-gray-800 px-4 py-2 hover:bg-orange-300">House Listing</Link>
+            <Link to="#" className="block text-gray-800 px-4 py-2 hover:bg-orange-300">About Us</Link>
+            <Link to="#" className="block text-gray-800 px-4 py-2 hover:bg-orange-300">Services</Link>
+            <Link to="#" className="block text-gray-800 px-4 py-2 hover:bg-orange-300">Contact Us</Link>
             <div className="flex justify-around py-4">
               <Button className="text-black border bg-white border-orange-600 px-4 py-2 rounded hover:bg-orange hover:text-white transition">
-                Login
+                <Link to='/login' className='text-black hover:text-black'>Login </Link>
               </Button>
               <Button className="text-white px-4 py-2 rounded hover:bg-orange transition">
-                Sign Up
+              <Link to='/register' className='text-white hover:text-white'>Sign Up </Link>
               </Button>
             </div>
           </nav>
