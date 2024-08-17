@@ -4,6 +4,7 @@ import Header from '../../layouts/header';
 import BottomNav from '../../layouts/bottomNavigation';
 import HouseCarousel from '../../component/HouseCarousel';
 import Text from '../../utils/TextInput';
+import HouseList from '../../component/VerticalListing';
 
 function HomePage() {
   return (
@@ -11,8 +12,8 @@ function HomePage() {
       <Header />
       
       {/* Other components for routes go here */}
-      <Text className='m-4 text-xl'>Near You</Text>
       <HouseCarousel  />
+      <HouseList />
       <BottomNav />
       </div>
     
