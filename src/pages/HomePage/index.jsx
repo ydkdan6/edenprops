@@ -12,7 +12,7 @@ function HomePage() {
       
       {/* Other components for routes go here */}
       <Text className='m-4 text-xl'>Near You</Text>
-      <HouseCarousel  />
+      {/* <HouseCarousel  /> */}
       <BottomNav />
       </div>
     
