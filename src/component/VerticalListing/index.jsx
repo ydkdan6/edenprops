@@ -50,8 +50,8 @@ const HouseList = () => {
   ];
 
   return (
-    <div className="container mx-auto  py-4 px-7 ">
-      <div className="grid grid-cols-1 gap-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4">
+    <div className="container mx-auto py-4 px-7 ">
+      <div className="grid grid-cols-1 gap-10 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4">
         {houses.map((house, index) => (
           <HouseCard
             key={index}
