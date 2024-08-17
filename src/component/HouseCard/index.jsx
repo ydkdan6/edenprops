@@ -5,7 +5,7 @@ const HouseCard = ({ imageSrc, title, features }) => {
   const msFilter = 'rotate(-0.9deg)'; 
 
   return (
-    <div className="w-[300px] h-[200px] m-4 mt-[50px] bg-white rounded-lg shadow-md relative">
+    <div className="w-[300px] h-[200px] m-4 mt-[10px] bg-white rounded-lg shadow-md relative">
       <div className="bg-white shadow-sm w-[250px] h-[100px] z-10 absolute right-6 top-[150px] rounded-lg p-4 z-7">
         <h2 className="text-xl md:text-xl font-bold text-gray-800">{title}</h2>
         <div className="flex justify-between mt-4 w-[270px]">
