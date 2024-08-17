@@ -11,12 +11,12 @@ const HouseCarousel = () => {
       features: ['Affordable'],
     },
     {
-      imageSrc: '/housecard.jpg',
+      imageSrc: '/housecard2.jpg',
       title: 'Modern Villa',
       features: ['Affordable'],
     },
     {
-      imageSrc: '/housecard.jpg',
+      imageSrc: '/housecard1.jpg',
       title: 'Family Home',
       features: ['Affordable'],
     },
@@ -27,7 +27,7 @@ const HouseCarousel = () => {
       features: ['Affordable'],
     },
     {
-      imageSrc: '/housecard.jpg',
+      imageSrc: '/housecard2.jpg',
       title: 'Family Home',
       features: ['Affordable'],
     },
@@ -37,7 +37,7 @@ const HouseCarousel = () => {
       features: ['Affordable'],
     },
     {
-      imageSrc: '/housecard.jpg',
+      imageSrc: '/housecard1.jpg',
       title: 'Family Home',
       features: ['Affordable'],
     },

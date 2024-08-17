@@ -6,7 +6,7 @@ import '../HouseCarousel/style.css'
 const HouseList = () => {
   const houses = [
     {
-      imageSrc: '/housecard.jpg',
+      imageSrc: '/housecard1.jpg',
       title: 'Cozy Cottage',
       features: ['Affordable'],
     },
@@ -16,7 +16,7 @@ const HouseList = () => {
       features: ['Affordable'],
     },
     {
-      imageSrc: '/housecard.jpg',
+      imageSrc: '/housecard2.jpg',
       title: 'Family Home',
       features: ['Affordable'],
     },
@@ -27,12 +27,12 @@ const HouseList = () => {
       features: ['Affordable'],
     },
     {
-        imageSrc: '/housecard.jpg',
+        imageSrc: '/housecard1.jpg',
         title: 'Cozy Cottage',
         features: ['Affordable'],
       },
       {
-        imageSrc: '/housecard.jpg',
+        imageSrc: '/housecard2.jpg',
         title: 'Modern Villa',
         features: ['Affordable'],
       },
@@ -43,7 +43,7 @@ const HouseList = () => {
       },
       // more houses
       {
-        imageSrc: '/housecard.jpg',
+        imageSrc: '/housecard1.jpg',
         title: 'Family Home',
         features: ['Affordable'],
       },

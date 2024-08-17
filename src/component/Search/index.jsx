@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './style.css'; // Import the CSS file for styling
 
 const Search = () => {
@@ -22,6 +23,7 @@ const Search = () => {
         value={query}
         onChange={handleInputChange}
       />
+      <Link to='/search'>
       <button
         className="search__button"
         onClick={handleSearch}
@@ -36,6 +38,7 @@ const Search = () => {
           </g>
         </svg>
       </button>
+      </Link>
     </div>
   );
 };
