@@ -89,7 +89,7 @@ const LoginForm = () => {
         </Link>
         </Button>
 
-      <Text className="text-center pt-12 text-gray-600 mb-4">Don't have an account? <span className="text-blue-500 cursor-pointer">Sign Up</span></Text>
+      <Text className="text-center pt-12 text-gray-600 mb-4">Don't have an account? <Link to='/register' className="text-blue-500 cursor-pointer">Sign Up</Link></Text>
 
       {/* <p className="text-gray-600 mb-4 text-center">Or With</p> */}
 
