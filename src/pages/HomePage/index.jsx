@@ -6,6 +6,7 @@ import HouseCarousel from '../../component/HouseCarousel';
 import Text from '../../utils/TextInput';
 import HouseList from '../../component/VerticalListing';
 import SearchBtn from '../../layouts/search';
+import Footer from '../../layouts/footer';
 
 function HomePage() {
   return (
@@ -17,6 +18,7 @@ function HomePage() {
       <Text className='m-1 text-4xl text-center underline'>More listing for you</Text>
       <HouseList />
       <SearchBtn />
+      <Footer />
       <BottomNav />
       </div>
     

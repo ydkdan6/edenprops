@@ -1,7 +1,7 @@
 import React from 'react';
 import HouseCard from '../HouseCard';
 import Text from '../../utils/TextInput';
-import '../HouseCarousel/style.css'
+import '../HouseCarousel/style.css';
 
 const HouseList = () => {
   const houses = [
@@ -62,6 +62,7 @@ const HouseList = () => {
         ))}
       </div>
     </div>
+    
   );
 };
 
