@@ -43,7 +43,7 @@ const HouseCarousel = () => {
   ];
 
   return (
-    <div className="overflow-xscroll flex flex-nowrap py-4">
+    <div className="overflow-x-scroll flex flex-nowrap py-4">
       <div className="flex flex-nowrap">
       {houses.map((house, index) => (
         <HouseCard
