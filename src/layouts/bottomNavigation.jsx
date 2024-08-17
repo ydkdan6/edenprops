@@ -7,7 +7,7 @@ const BottomNav = () => {
     const msFilter = 'rotate(-0.9deg)';
 
   return (
-    <div className="bottom-nav w-screen z-40 ">
+    <div className="bottom-nav w-screen z-40">
      <nav className='flex justify-center items-center bg-orange-500 mx-5 py-4 px-9 space-x-12 rounded-full'>
      <NavLink to="/" exact activeClassName="active">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
