@@ -1,0 +1,65 @@
+/* From Uiverse.io by joe-watson-sbf */ 
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 2rem;
+  }
+  
+  .search__input {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    color: #646464;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    height: 2.9rem;
+    width: 14em;
+    transition: all ease-in-out .5s;
+    margin-right: -2rem;
+  }
+  
+  .search__input:hover, .search__input:focus {
+    box-shadow: 0 0 1em #00000013;
+  }
+  
+  .search__input:focus {
+    outline: none;
+    background-color: #f0eeee;
+  }
+  
+  .search__input::-webkit-input-placeholder {
+    font-weight: 100;
+    color: #ccc;
+  }
+  
+  .search__input:focus + .search__button {
+    background-color: #f0eeee;
+  }
+  
+  .search__button {
+    position: relative;
+    top: 0.5rem;
+    height: 2.9rem;
+    width: 2.9rem;
+    border: none;
+    border-radius: 50%;
+    margin-left: 2.3rem;
+    background-color: #ff8210;
+    margin-top: .1em;
+  }
+  
+  .search__button:hover {
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  .search__icon {
+    position: relative;
+    right: 0.3rem;
+    height: 1.3em;
+    width: 1.3em;
+    fill: #000;
+  }
