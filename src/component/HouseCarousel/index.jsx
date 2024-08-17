@@ -1,6 +1,5 @@
 import React from 'react';
 import HouseCard from '../HouseCard';
-import Text from '../../utils/TextInput';
 
 const HouseCarousel = () => {
   const houses = [
@@ -19,41 +18,42 @@ const HouseCarousel = () => {
       title: 'Family Home',
       features: ['Affordable'],
     },
-    //  more houses 
+    // more houses 
     {
-        imageSrc: '/housecard.jpg',
-        title: 'Family Home',
-        features: ['Affordable'],
-      },
-      {
-        imageSrc: '/housecard.jpg',
-        title: 'Family Home',
-        features: ['Affordable'],
-      },
-      {
-        imageSrc: '/housecard.jpg',
-        title: 'Family Home',
-        features: ['Affordable'],
-      },
-      {
-        imageSrc: '/housecard.jpg',
-        title: 'Family Home',
-        features: ['Affordable'],
-      },
+      imageSrc: '/housecard.jpg',
+      title: 'Family Home',
+      features: ['Affordable'],
+    },
+    {
+      imageSrc: '/housecard.jpg',
+      title: 'Family Home',
+      features: ['Affordable'],
+    },
+    {
+      imageSrc: '/housecard.jpg',
+      title: 'Family Home',
+      features: ['Affordable'],
+    },
+    {
+      imageSrc: '/housecard.jpg',
+      title: 'Family Home',
+      features: ['Affordable'],
+    },
   ];
 
   return (
-    <div className="overflow-x-scroll flex flex-nowrap py-4">
-      <div className="flex flex-nowrap">
-      {houses.map((house, index) => (
-        <HouseCard
-        
-          key={index}
-          imageSrc={house.imageSrc}
-          title={house.title}
-          features={house.features}
-        />
-      ))}
+    <div className="container mx-auto py-4 h-[350px] ">
+      <div className="overflow-x-scroll flex flex-nowrap w-screen h-full scrollbar-hide">
+        <div className="flex flex-nowrap h-full">
+          {houses.map((house, index) => (
+            <HouseCard
+              key={index}
+              imageSrc={house.imageSrc}
+              title={house.title}
+              features={house.features}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
