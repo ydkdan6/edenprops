@@ -79,7 +79,7 @@ const LoginForm = () => {
         </div>
         <span className="text-blue-500 cursor-pointer">
           <Link to='/forgotpassword'>
-          Sign In
+          forgotten password
         </Link>
         </span>
       </div>
