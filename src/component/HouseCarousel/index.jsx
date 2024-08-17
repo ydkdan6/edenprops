@@ -46,7 +46,7 @@ const HouseCarousel = () => {
   return (
     <div className="container my-[100px] mx-auto py-4 h-[350px] ">
         <div className='flex justify-between items-center'>
-        <Text className='m-5 text-xl'>Near You</Text>
+        <Text className='m-9 text-xl'>Near You</Text>
         <Search />
         </div>
         
