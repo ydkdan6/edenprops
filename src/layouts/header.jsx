@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../utils/Button';
+import './style.css';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,28 +37,31 @@ const Header = () => {
           </Button>
         </div>
 
-        {/* Mobile Menu Button */}
-        <div className="md:hidden flex items-center">
-          <Button
-            className="bg-white hover:bg-white hover:border-orange-500 text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500"
+
+{/* Mobile Menu Button */}
+<div className="md:hidden flex items-center">
+          <button
+            className="text-gray-800 hover:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500"
             onClick={toggleMenu}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
-          </Button>
+          </button>
         </div>
       </div>
+
+
 
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
         <div className="md:hidden">
           <nav className="bg-white shadow-lg">
-            <Link to="#" className="block text-gray-800 px-4 py-2 hover:bg-orange-300">Home</Link>
-            <Link to="#" className="block text-gray-800 px-4 py-2 hover:bg-orange-300">House Listing</Link>
-            <Link to="#" className="block text-gray-800 px-4 py-2 hover:bg-orange-300">About Us</Link>
-            <Link to="#" className="block text-gray-800 px-4 py-2 hover:bg-orange-300">Services</Link>
-            <Link to="#" className="block text-gray-800 px-4 py-2 hover:bg-orange-300">Contact Us</Link>
+            <Link to="#" className="a block text-gray-800 px-4 py-2 hover:bg-orange-300">Home</Link>
+            <Link to="#" className="a block text-gray-800 px-4 py-2 hover:bg-orange-300">House Listing</Link>
+            <Link to="#" className="a block text-gray-800 px-4 py-2 hover:bg-orange-300">About Us</Link>
+            <Link to="#" className="a block text-gray-800 px-4 py-2 hover:bg-orange-300">Services</Link>
+            <Link to="#" className="a block text-gray-800 px-4 py-2 hover:bg-orange-300">Contact Us</Link>
             <div className="flex justify-around py-4">
               <Button className="text-black border bg-white border-orange-600 px-4 py-2 rounded hover:bg-orange hover:text-white transition">
                 <Link to='/login' className='text-black hover:text-black'>Login </Link>
@@ -70,6 +74,7 @@ const Header = () => {
         </div>
       )}
     </header>
+    
   );
 };
 
