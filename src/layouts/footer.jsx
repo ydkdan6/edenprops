@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaWhatsapp, FaInstagram } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaWhatsapp, FaInstagram } from 'react-icons/fa';
 import Image from '../utils/Image';
 
 const Footer = () => {
@@ -89,7 +89,7 @@ const Footer = () => {
 
       {/* Copyright Section */}
       <div className="mt-8 text-center text-gray-400">
-        <p>&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Eden Property. All rights reserved.</p>
       </div>
     </footer>
   );
