@@ -56,7 +56,7 @@ const ListingProfilePage = () => {
       <Header />
       <div className="flex flex-col lg:flex-row min-h-screen bg-gray-100 mt-[70px] lg:mt-0">
         {/* Filter Section */}
-        <div className="lg:w-1/4 bg-white p-6 lg:fixed lg:right-0 lg:top-0 lg:h-[410px] shadow-lg z-10">
+        <div className="lg:w-1/4 bg-white p-6 lg:fixed lg:right-0 lg:top-0 lg:h-[410px] shadow-lg z-10 md:mt-[70px]">
           <h2 className="text-xl font-bold mb-4">Filter Houses</h2>
           <div className="space-y-4">
             {/* Bedrooms Filter */}
