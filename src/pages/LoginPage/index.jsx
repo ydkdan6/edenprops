@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Button from '../../utils/Button';
+import Button from '.mp./../utils/Button';
 import Text from '../../utils/TextInput';
 import Image from '../../utils/Image';
 import './style.css';
