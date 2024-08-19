@@ -13,10 +13,10 @@ const ListingProfilePage = () => {
       });
     
       const houses = [
-        { id: 1, title: 'Cozy Cottage', bedrooms: 2, electricity: true, space: 'Small', price: 1000, image: '/house1.jpg' },
-        { id: 2, title: 'Modern Villa', bedrooms: 3, electricity: true, space: 'Large', price: 3000, image: '/house2.jpg' },
-        { id: 3, title: 'Family Home', bedrooms: 4, electricity: false, space: 'Medium', price: 2500, image: '/house3.jpg' },
-        { id: 4, title: 'Compact Apartment', bedrooms: 1, electricity: true, space: 'Small', price: 800, image: '/house4.jpg' },
+        { id: 1, title: 'Cozy Cottage', bedrooms: 2, electricity: true, space: 'Small', price: 1000, image: '/housecard1.jpg' },
+        { id: 2, title: 'Modern Villa', bedrooms: 3, electricity: true, space: 'Large', price: 3000, image: '/housecard2.jpg' },
+        { id: 3, title: 'Family Home', bedrooms: 4, electricity: false, space: 'Medium', price: 2500, image: '/housecard.jpg' },
+        { id: 4, title: 'Compact Apartment', bedrooms: 1, electricity: true, space: 'Small', price: 800, image: '/housecard1.jpg' },
         // Add more house listings here...
       ];
     
@@ -52,7 +52,7 @@ const ListingProfilePage = () => {
               <h3 className="text-xl font-bold mt-4">{house.title}</h3>
               <p className="mt-2 text-gray-600">Bedrooms: {house.bedrooms}</p>
               <p className="mt-2 text-gray-600">Space: {house.space}</p>
-              <p className="mt-2 text-gray-600">Price: ${house.price}</p>
+              <p className="mt-2 text-gray-600">Price: #{house.price}</p>
               <p className="mt-2 text-gray-600">{house.electricity ? '24/7 Electricity' : 'No Electricity'}</p>
             </div>
           ))}
@@ -60,7 +60,7 @@ const ListingProfilePage = () => {
       </div>
 
       {/* Filter Section */}
-      <div className="w-1/4 bg-white p-6 fixed right-0 top-0 h-full shadow-lg">
+      <div className="w-1/4 bg-white p-6 fixed right-0 top-0 h-[410px] shadow-lg mt-[70px]">
         <h2 className="text-xl font-bold mb-4">Filter Houses</h2>
         <div className="space-y-4">
           {/* Bedrooms Filter */}
