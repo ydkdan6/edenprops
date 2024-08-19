@@ -5,7 +5,7 @@ import Image from '../utils/Image';
 
 const Footer = () => {
   return (
-    <footer className="w-screen mt-[60px] bg-black text-white py-8">
+    <footer className="w-screen mt-[60px] bg-black text-white py-8 ">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         
         {/* Logo Section */}
