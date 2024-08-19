@@ -2,33 +2,61 @@ import React, { useEffect } from 'react';
 
 const LocationNotification = () => {
   useEffect(() => {
-    // Request permission for notifications on component mount
+    // Check the current permission status
     if (Notification.permission === 'default') {
+      // Request permission to show notifications
       Notification.requestPermission().then((permission) => {
         if (permission === 'granted') {
+          // If granted, show the custom notification
           showNotification();
+        } else {
+          console.log('Notification permission denied');
+          alert("Notifications are blocked. Please enable them to access this feature.");
         }
       });
     } else if (Notification.permission === 'granted') {
+      // Permission was already granted, show the custom notification
       showNotification();
+    } else {
+      console.log('Notifications are blocked. Please enable them to access this feature.');
     }
   }, []);
 
   const showNotification = () => {
     const notification = new Notification('Location Access Required', {
-      body: 'Please allow location access to provide a better experience.',
-      icon: '/location-icon.png', // Add an icon to the notification
-      tag: 'location-request', // Assign a tag to avoid duplicate notifications
+      body: 'Click to allow access to your location to get vacant houses near you!.',
+      icon: '/logo.png',
+      tag: 'location-request',
     });
 
-    // Handle click event on the notification
     notification.onclick = () => {
       console.log('Notification clicked');
-      //  navigate the user to a specific page or handle other actions here
+      requestLocationAccess();
     };
   };
 
-  return <div></div>; // The component does not render anything visible
+  const requestLocationAccess = () => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const { latitude, longitude } = position.coords;
+          console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+        },
+        (error) => {
+          console.error('Error getting location:', error);
+        },
+        {
+          enableHighAccuracy: true,
+          timeout: 10000,
+          maximumAge: 0,
+        }
+      );
+    } else {
+      console.error('Geolocation is not supported by this browser.');
+    }
+  };
+
+  return <div></div>;
 };
 
 export default LocationNotification;
