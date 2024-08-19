@@ -19,7 +19,7 @@ const ContactUs = () => {
 
         {/* Contact Form */}
         <form
-          action="https://formspree.io/f/your-email-address" // Replace with your Formspree endpoint
+          action="mailto:danielgodwin713@gmail.com" 
           method="POST"
           className="mt-8 space-y-6"
         >
