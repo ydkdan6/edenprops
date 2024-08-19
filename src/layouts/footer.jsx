@@ -1,22 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaWhatsapp, FaInstagram } from 'react-icons/fa';
+import Image from '../utils/Image';
 
 const Footer = () => {
   return (
-    <footer className="w-screen mt-[40px] bg-black text-white py-8">
+    <footer className="w-screen mt-[60px] bg-black text-white py-8">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         
         {/* Logo Section */}
         <div className="mb-4 md:mb-0">
           <Link to="/">
-            <img src="/logo.png" alt="Logo" className="h-10" />
+            <Image src="/logo.png" alt="Logo" className="h-10" />
           </Link>
         </div>
 
         {/* Navigation Section */}
         <nav className="mb-4 md:mb-0">
-          <ul className="flex ml-4 space-x-4">
+          <ul className="flex ml-4m,l space-x-4">
             <li>
               <Link to="/" className="text-white hover:text-orange-500">
                 Home

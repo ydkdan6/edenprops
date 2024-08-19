@@ -2,13 +2,13 @@ import React from "react";
 import Header from "../../layouts/header";
 import Footer from "../../layouts/footer";
 
-const ListingProfilePage = () => {
+const AboutUs = () => {
     return (
         <div>
             <Header />
             <Footer />
         </div>
     );
-}
+};
 
-export default ListingProfilePage;
+export default AboutUs;
