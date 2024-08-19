@@ -101,6 +101,7 @@ const LoginForm = () => {
       </form>
     </div>
     <div className="hidden w-full md:w-1/2 md:block h-full">
+    <Image src='/logo.png' alt='logo-image' className='absolute top-[310px] right-[456px] w-[170px]' />
       <Image src="/side-image.jpg" alt="side-image" className="w-[360rem] h-full bg-cover" />
     </div>
   </div>

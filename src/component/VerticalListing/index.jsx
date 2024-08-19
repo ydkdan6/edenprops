@@ -1,7 +1,7 @@
 import React from 'react';
 import HouseCard from '../HouseCard';
 import Text from '../../utils/TextInput';
-import '../HouseCarousel/style.css'
+import '../HouseCarousel/style.css';
 
 const HouseList = () => {
   const houses = [
@@ -50,7 +50,7 @@ const HouseList = () => {
   ];
 
   return (
-    <div className="container mx-auto py-4 px-7 ">
+    <div className="container mx-2 py-4 px-7 ">
       <div className="grid grid-cols-1 gap-10 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4">
         {houses.map((house, index) => (
           <HouseCard
@@ -62,6 +62,7 @@ const HouseList = () => {
         ))}
       </div>
     </div>
+    
   );
 };
 

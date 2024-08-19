@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Image from '../../utils/Image';
 
 const HouseCard = ({ imageSrc, title, features }) => {
   const msFilter = 'rotate(-0.9deg)'; 
@@ -27,7 +28,7 @@ const HouseCard = ({ imageSrc, title, features }) => {
         </div>
       </div>
 
-      <img src={imageSrc} alt={title} className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300 ease-in-out rounded-lg" />
+      <Image src={imageSrc} alt={title} className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300 ease-in-out rounded-lg" />
     </div>
   );
 };

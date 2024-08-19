@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../utils/Button';
 import './style.css';
+import LocationNotification from '../component/getDistanceFromLocation';
+import Image from '../utils/Image';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,19 +14,20 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-md w-full fixed top-0 left-0 z-40">
+            <LocationNotification  />
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
-        <div className="text-2xl font-bold text-black">
-          Logo
+        <div className="text-2xl font-bold text-black w-[140px]">
+          <Image src='/logo.png' alt='logo-image' />
         </div>
 
         {/* Navigation Links */}
         <nav className="hidden md:flex space-x-8">
-          <Link to="#" className="text-gray-800 hover:scale-[1.2]">Home</Link>
-          <Link to="#" className="text-gray-800 hover:scale-[1.2]">House Listing</Link>
-          <Link to="#" className="text-gray-800 hover:scale-[1.2]">About Us</Link>
-          <Link to="#" className="text-gray-800 hover:scale-[1.2]">Services</Link>
-          <Link to="#" className="text-gray-800 hover:scale-[1.2]">Contact Us</Link>
+          <Link to="/" className="text-gray-800 hover:scale-[1.2] hover:text-orange-500">Home</Link>
+          <Link to="/listing" className="text-gray-800 hover:scale-[1.2] hover:text-orange-500">House Listing</Link>
+          <Link to="/about" className="text-gray-800 hover:scale-[1.2]  hover:text-orange-500">About Us</Link>
+          <Link to="#" className="text-gray-800 hover:scale-[1.2] hover:text-orange-500">Services</Link>
+          <Link to="/contact" className="text-gray-800 hover:scale-[1.2] hover:text-orange-500">Contact Us</Link>
         </nav>
 
         {/* Buttons */}
