@@ -10,37 +10,109 @@ const HouseCarousel = () => {
       imageSrc: '/housecard.jpg', 
       title: 'Cozy Cottage',
       features: ['Affordable'],
+      description: 'A beautiful luxury villa located in the heart of the city. Comes with all modern amenities and a stunning view.',
+    bedrooms: 4,
+    bathrooms: 3,
+    price: 5000,
+    space: 'Large',
+    location: 'Downtown, City Center',
+    electricity: true,
+    whatsappNumber: '+123456789',
+    email: 'info@realestate.com',
+    phone: '+123456789',
     },
     {
+      id:2,
       imageSrc: '/housecard2.jpg',
       title: 'Modern Villa',
       features: ['Affordable'],
+      description: 'A cozy cottage perfect for a small family. Located in a quiet neighborhood with easy access to local amenities.',
+      bedrooms: 2,
+      bathrooms: 1,
+      price: 2000,
+      space: 'Medium',
+      location: 'Suburbs',
+      electricity: true,
+      whatsappNumber: '+987654321',
+      email: 'contact@realestate.com',
+      phone: '+987654321',
     },
     {
       imageSrc: '/housecard1.jpg',
       title: 'Family Home',
       features: ['Affordable'],
+      description: 'A cozy cottage perfect for a small family. Located in a quiet neighborhood with easy access to local amenities.',
+    bedrooms: 2,
+    bathrooms: 1,
+    price: 2000,
+    space: 'Medium',
+    location: 'Suburbs',
+    electricity: true,
+    whatsappNumber: '+987654321',
+    email: 'contact@realestate.com',
+    phone: '+987654321',
+
     },
     // more houses 
     {
       imageSrc: '/housecard.jpg',
       title: 'Family Home',
       features: ['Affordable'],
+      description: 'A cozy cottage perfect for a small family. Located in a quiet neighborhood with easy access to local amenities.',
+    bedrooms: 2,
+    bathrooms: 1,
+    price: 2000,
+    space: 'Medium',
+    location: 'Suburbs',
+    electricity: true,
+    whatsappNumber: '+987654321',
+    email: 'contact@realestate.com',
+    phone: '+987654321',
     },
     {
       imageSrc: '/housecard2.jpg',
       title: 'Family Home',
       features: ['Affordable'],
+      description: 'A cozy cottage perfect for a small family. Located in a quiet neighborhood with easy access to local amenities.',
+    bedrooms: 2,
+    bathrooms: 1,
+    price: 2000,
+    space: 'Medium',
+    location: 'Suburbs',
+    electricity: true,
+    whatsappNumber: '+987654321',
+    email: 'contact@realestate.com',
+    phone: '+987654321',
     },
     {
       imageSrc: '/housecard.jpg',
       title: 'Family Home',
       features: ['Affordable'],
+      description: 'A cozy cottage perfect for a small family. Located in a quiet neighborhood with easy access to local amenities.',
+    bedrooms: 2,
+    bathrooms: 1,
+    price: 2000,
+    space: 'Medium',
+    location: 'Suburbs',
+    electricity: true,
+    whatsappNumber: '+987654321',
+    email: 'contact@realestate.com',
+    phone: '+987654321',
     },
     {
       imageSrc: '/housecard1.jpg',
       title: 'Family Home',
       features: ['Affordable'],
+      description: 'A cozy cottage perfect for a small family. Located in a quiet neighborhood with easy access to local amenities.',
+    bedrooms: 2,
+    bathrooms: 1,
+    price: 2000,
+    space: 'Medium',
+    location: 'Suburbs',
+    electricity: true,
+    whatsappNumber: '+987654321',
+    email: 'contact@realestate.com',
+    phone: '+987654321',
     },
   ];
 
@@ -61,6 +133,14 @@ const HouseCarousel = () => {
             title={house.title}
             description={house.description}
             features={house.features}
+            electricity={house.electricity}
+            bedrooms={house.bedrooms}
+            bathrooms={house.bathrooms}
+            price={house.price}
+            phone={house.phone}
+            email={house.email}
+            location={house.location}
+            space={house.space}
             />
           ))}
         </div>

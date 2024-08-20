@@ -1,30 +1,99 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
+import { FaWhatsapp, FaEnvelope, FaPhone, FaCommentDots } from 'react-icons/fa';
+
 
 const HouseDetailPage = () => {
+  const { id } = useParams(); // Get the house ID from the URL parameters
   const location = useLocation();
-  const { imageSrc, title, description, features } = location.state || {};
 
-  if (!imageSrc) {
-    return <div>Error: No house data available</div>;
+  // Use data from the state if available, otherwise find by ID
+  const house = location.state || houses.find(h => h.id === parseInt(id));
+
+  if (!house) {
+    return <div>House not found</div>;
   }
 
   return (
-    <div className="container mx-auto p-6">
-      <img src={imageSrc} alt={title} className="w-full h-64 object-cover rounded-lg shadow-md" />
-      <h1 className="text-3xl font-bold mt-4">{title}</h1>
-      <p className="mt-4 text-gray-600">{description}</p>
-      <ul className="mt-4 space-y-2">
-        {features.map((feature, index) => (
-          <li key={index} className="flex items-center text-gray-700">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M21 4H3a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1zm-1 11a3 3 0 0 0-3 3H7a3 3 0 0 0-3-3V9a3 3 0 0 0 3-3h10a3 3 0 0 0 3 3v6z"></path>
-              <path d="M12 8c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zm0 6c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2z"></path>
-            </svg>
-            &nbsp; {feature}
-          </li>
-        ))}
-      </ul>
+    <div className="bg-gray-100 min-h-screen py-10 md:w-screen">
+      <div className="container mx-auto px-4">
+        {/* House imageSrc */}
+        <div className="mb-8">
+          <img 
+            src={house.imageSrc} 
+            alt={house.title} 
+            className="w-full h-80 object-cover rounded-lg shadow-lg"
+          />
+        </div>
+
+        {/* House Title */}
+        <h1 className="text-4xl font-bold text-gray-800 mb-4">{house.title}</h1>
+
+        {/* House Description */}
+        <p className="text-lg text-gray-700 mb-6">
+          {house.description}
+        </p>
+
+        {/* House Details */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+          <div className="bg-white p-4 rounded-lg shadow-lg">
+            <h2 className="text-xl font-bold text-gray-800">Bedrooms</h2>
+            <p className="text-gray-700">{house.bedrooms}</p>
+          </div>
+          <div className="bg-white p-4 rounded-lg shadow-lg">
+            <h2 className="text-xl font-bold text-gray-800">Bathrooms</h2>
+            <p className="text-gray-700">{house.bathrooms}</p>
+          </div>
+          <div className="bg-white p-4 rounded-lg shadow-lg">
+            <h2 className="text-xl font-bold text-gray-800">Price</h2>
+            <p className="text-gray-700">#{house.price}</p>
+          </div>
+          <div className="bg-white p-4 rounded-lg shadow-lg">
+            <h2 className="text-xl font-bold text-gray-800">Space</h2>
+            <p className="text-gray-700">{house.space}</p>
+          </div>
+          <div className="bg-white p-4 rounded-lg shadow-lg">
+            <h2 className="text-xl font-bold text-gray-800">Location</h2>
+            <p className="text-gray-700">{house.location}</p>
+          </div>
+          <div className="bg-white p-4 rounded-lg shadow-lg">
+            <h2 className="text-xl font-bold text-gray-800">Electricity</h2>
+            <p className="text-gray-700">
+              {house.electricity ? '24/7 Electricity' : 'No Electricity'}
+            </p>
+          </div>
+        </div>
+
+        {/* Contact Buttons */}
+        <div className="flex justify-center space-x-4">
+          <a 
+            href={`https://wa.me/${house.whatsappNumber}`} 
+            className="bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300"
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <FaWhatsapp size={24} />
+          </a>
+          <a 
+            href={`mailto:${house.email}`} 
+            className="bg-blue-500 text-white p-4 rounded-full shadow-lg hover:bg-blue-600 transition duration-300"
+          >
+            <FaEnvelope size={24} />
+          </a>
+          <a 
+            href={`tel:${house.phone}`} 
+            className="bg-yellow-500 text-white p-4 rounded-full shadow-lg hover:bg-yellow-600 transition duration-300"
+          >
+            <FaPhone size={24} />
+          </a>
+          <a 
+            href={`sms:${house.phone}`} 
+            className="bg-purple-500 text-white p-4 rounded-full shadow-lg hover:bg-purple-600 transition duration-300"
+          >
+            <FaCommentDots size={24} />
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
