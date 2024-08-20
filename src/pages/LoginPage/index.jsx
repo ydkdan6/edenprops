@@ -18,8 +18,8 @@ const LoginForm = () => {
 
   return (
     <div className="flex w-full h-screen items-center md:flex overflow-hidden">
-    <div className="w-[100%] h-full mt-[150px] ml-4 md:w-1/2 p-4">
-      <form className="p-4 w-[100%] ml-1 md:w-[80%] md:p-12 md:ml-[55px] md:h-[86%] pt-[20px] shadow-md h-[80%]" onSubmit={handleSubmit}>
+    <div className="w-[100%] h-full mt-[150px] ml-4 md:w-1/2 p-4 overflow-hidden">
+      <form className="p-4 w-full ml-3 md:w-[80%] md:p-12 md:ml-[55px] md:h-[86%] pt-[20px] shadow-md h-[80%] overflow-hidden" onSubmit={handleSubmit}>
         <Text className="text-center text-[28px] pb-4">Login</Text>
         <Text className="block md:hidden text-center text-3xl pb-4">Welcome to Eden, Mobile Viewer!</Text>
         <Text className="hidden md:block text-center text-3xl pb-4">Welcome to Eden, Pc Viewer!</Text>
