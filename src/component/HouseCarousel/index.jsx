@@ -38,6 +38,7 @@ const HouseCarousel = () => {
       phone: '+987654321',
     },
     {
+      id:3,
       imageSrc: '/housecard1.jpg',
       title: 'Family Home',
       features: ['Affordable'],
@@ -55,6 +56,7 @@ const HouseCarousel = () => {
     },
     // more houses 
     {
+      id:4,
       imageSrc: '/housecard.jpg',
       title: 'Family Home',
       features: ['Affordable'],
@@ -70,6 +72,7 @@ const HouseCarousel = () => {
     phone: '+987654321',
     },
     {
+      id:5,
       imageSrc: '/housecard2.jpg',
       title: 'Family Home',
       features: ['Affordable'],
@@ -85,6 +88,7 @@ const HouseCarousel = () => {
     phone: '+987654321',
     },
     {
+      id:6,
       imageSrc: '/housecard.jpg',
       title: 'Family Home',
       features: ['Affordable'],
@@ -100,6 +104,7 @@ const HouseCarousel = () => {
     phone: '+987654321',
     },
     {
+      id:7,
       imageSrc: '/housecard1.jpg',
       title: 'Family Home',
       features: ['Affordable'],
