@@ -65,6 +65,7 @@ const HouseDetailPage = () => {
         </div>
 
         {/* Contact Buttons */}
+        <h2 className="mt-5 mb-2 text-bold text-center">You want this House, Kindly reach out to us via:</h2>
         <div className="flex justify-center space-x-4">
           <a 
             href={`https://wa.me/${house.whatsappNumber}`} 
