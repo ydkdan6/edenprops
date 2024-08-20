@@ -12,6 +12,7 @@ import MapPage from '../pages/MapPage';
 import ContactUs from '../pages/ContactUs';
 import NotFoundPage from '../NotFound';
 import ListingProfilePage from '../pages/ListingProfilePage';
+import ServicesPage from '../pages/Services';
 
 const AppRouter = () => {
   return (
@@ -27,6 +28,7 @@ const AppRouter = () => {
         <Route path="/houses/:id" element={<HouseDetailsPage />} />
         <Route path='/about' element={<AboutUs />} />
         <Route path="/map" element={<MapPage />} />
+        <Route path="/services" element={<ServicesPage />} />
         <Route path='/contact' element={<ContactUs />} />
         <Route path="*" element={<NotFoundPage />} /> {/* 404 Page */}
       </Routes>
