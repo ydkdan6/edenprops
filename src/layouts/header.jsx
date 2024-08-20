@@ -26,7 +26,7 @@ const Header = () => {
           <Link to="/" className="text-gray-800 hover:scale-[1.2] hover:text-orange-500">Home</Link>
           <Link to="/listing" className="text-gray-800 hover:scale-[1.2] hover:text-orange-500">House Listing</Link>
           <Link to="/about" className="text-gray-800 hover:scale-[1.2]  hover:text-orange-500">About Us</Link>
-          <Link to="#" className="text-gray-800 hover:scale-[1.2] hover:text-orange-500">Services</Link>
+          <Link to="/services" className="text-gray-800 hover:scale-[1.2] hover:text-orange-500">Services</Link>
           <Link to="/contact" className="text-gray-800 hover:scale-[1.2] hover:text-orange-500">Contact Us</Link>
         </nav>
 
@@ -60,11 +60,11 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden">
           <nav className="bg-white shadow-lg">
-            <Link to="#" className="a block text-gray-800 px-4 py-2 hover:bg-orange-300">Home</Link>
-            <Link to="#" className="a block text-gray-800 px-4 py-2 hover:bg-orange-300">House Listing</Link>
-            <Link to="#" className="a block text-gray-800 px-4 py-2 hover:bg-orange-300">About Us</Link>
-            <Link to="#" className="a block text-gray-800 px-4 py-2 hover:bg-orange-300">Services</Link>
-            <Link to="#" className="a block text-gray-800 px-4 py-2 hover:bg-orange-300">Contact Us</Link>
+            <Link to="/" className="a block text-gray-800 px-4 py-2 hover:bg-orange-300">Home</Link>
+            <Link to="/listing" className="a block text-gray-800 px-4 py-2 hover:bg-orange-300">House Listing</Link>
+            <Link to="/about" className="a block text-gray-800 px-4 py-2 hover:bg-orange-300">About Us</Link>
+            <Link to="/services" className="a block text-gray-800 px-4 py-2 hover:bg-orange-300">Services</Link>
+            <Link to="/contact" className="a block text-gray-800 px-4 py-2 hover:bg-orange-300">Contact Us</Link>
             <div className="flex justify-around py-4">
               <Button className="text-black border bg-white border-orange-600 px-4 py-2 rounded hover:bg-orange hover:text-white transition">
                 <Link to='/login' className='text-black hover:text-black'>Login </Link>
