@@ -6,7 +6,7 @@ import '../HouseCarousel/style.css';
 const HouseList = () => {
   const houses = [
     {
-      id:8,
+      id: 8,
       imageSrc: '/housecard1.jpg',
       title: 'Cozy Cottage',
       features: ['Affordable'],
@@ -140,9 +140,10 @@ const HouseList = () => {
   return (
     <div className="container mx-2 py-4 px-7 ">
       <div className="grid grid-cols-1 gap-10 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4">
-        {houses.map((house, index) => (
+        {houses.map((house) => (
           <HouseCard
-            key={index}
+            key={house.id}
+            id={house.id}
             imageSrc={house.imageSrc}
             title={house.title}
             description={house.description}
