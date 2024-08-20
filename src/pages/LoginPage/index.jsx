@@ -78,7 +78,7 @@ const LoginForm = () => {
           <label htmlFor="remember" className="text-gray-700">Remember me</label>
         </div>
         <span className="text-blue-500 cursor-pointer">
-          <Link to='/forgotpassword'>
+          <Link to='/forgetpassword'>
           forgotten password
         </Link>
         </span>
