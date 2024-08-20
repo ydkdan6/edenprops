@@ -6,6 +6,7 @@ import Search from '../../component/Search';
 const HouseCarousel = () => {
   const houses = [
     {
+      id: 1,
       imageSrc: '/housecard.jpg', 
       title: 'Cozy Cottage',
       features: ['Affordable'],
@@ -52,12 +53,14 @@ const HouseCarousel = () => {
         
       <div className="overflow-x-scroll flex flex-nowrap w-screen h-[345px] scrollbar-hide">
         <div className="flex flex-nowrap h-full mt-0">
-          {houses.map((house, index) => (
+          {houses.map((house) => (
             <HouseCard
-              key={index}
-              imageSrc={house.imageSrc}
-              title={house.title}
-              features={house.features}
+            key={house.id}
+            id={house.id}
+            imageSrc={house.imageSrc}
+            title={house.title}
+            description={house.description}
+            features={house.features}
             />
           ))}
         </div>

@@ -7,7 +7,7 @@ import ForgetPassword from '../pages/forgotPassword';
 import RegisterPage from '../pages/signUpPage';
 import Dashboard from '../pages/Dashboard';
 import AdminDashboard from '../pages/AdminDashboard';
-import HouseDetailsPage from '../pages/HouseDetailPage';
+import HouseDetailPage from '../pages/HouseDetailPage';
 import MapPage from '../pages/MapPage';
 import ContactUs from '../pages/ContactUs';
 import NotFoundPage from '../NotFound';
@@ -25,7 +25,7 @@ const AppRouter = () => {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/admin" element={<AdminDashboard />} />
         <Route path='/listing' element={<ListingProfilePage />} />
-        <Route path="/houses/:id" element={<HouseDetailsPage />} />
+        <Route path="/houses/:id" element={<HouseDetailPage />} />
         <Route path='/about' element={<AboutUs />} />
         <Route path="/map" element={<MapPage />} />
         <Route path="/services" element={<ServicesPage />} />
