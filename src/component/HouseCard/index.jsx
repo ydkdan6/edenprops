@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Image from '../../utils/Image';
 
-const HouseCard = ({ id, imageSrc, title, description, features, bedrooms, bathrooms, price, space, location, electricity, whatsappNumber, email, phone  }) => {
+const HouseCard = ({ id, imageSrc, title, description, brief, features, bedrooms, bathrooms, price, space, location, electricity, whatsappNumber, email, phone  }) => {
   const navigate = useNavigate();
 
   const handleViewDetails = () => {
@@ -12,6 +12,7 @@ const HouseCard = ({ id, imageSrc, title, description, features, bedrooms, bathr
         imageSrc,
         title,
         description,
+        brief,
         features,
         bedrooms,
         bathrooms,

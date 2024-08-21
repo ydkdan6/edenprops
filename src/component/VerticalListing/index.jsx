@@ -2,6 +2,7 @@ import React from 'react';
 import HouseCard from '../HouseCard';
 import Text from '../../utils/TextInput';
 import '../HouseCarousel/style.css';
+import PropertyGrid from './housecardlist';
 
 const HouseList = () => {
   const houses = [
@@ -141,7 +142,7 @@ const HouseList = () => {
     <div className="container mx-2 py-4 px-7 ">
       <div className="grid grid-cols-1 gap-10 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4">
         {houses.map((house) => (
-          <HouseCard
+          <PropertyGrid
             key={house.id}
             id={house.id}
             imageSrc={house.imageSrc}

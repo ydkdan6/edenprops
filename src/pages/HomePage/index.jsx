@@ -8,6 +8,7 @@ import HouseList from '../../component/VerticalListing';
 import SearchBtn from '../../layouts/search';
 import Footer from '../../layouts/footer';
 import Sponsors from '../../component/Sponsors';
+import PropertyGrid from '../../component/VerticalListing/housecardlist';
 
 function HomePage() {
   return (
@@ -18,7 +19,7 @@ function HomePage() {
       {/* Other components for routes go here */}
       <HouseCarousel  />
       <Text className='m-1 text-4xl text-center underline'>More listing for you</Text>
-      <HouseList />
+      <PropertyGrid />
       <Sponsors />
       <SearchBtn />
       <Footer />
