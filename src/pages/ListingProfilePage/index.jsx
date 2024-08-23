@@ -131,8 +131,8 @@ const ListingProfilePage = () => {
         </div>
 
         {/* House Listings Section */}
-        <div className="lg:w-3/4 w-full lg:overflow-y-auto lg:p-6 mt-4 lg:mt-0 lg:ml-[0.2%]">
-          <h2 className="text-2xl font-bold mb-4">House Listings</h2>
+        <div className="lg:w-3/4 w-full lg:overflow-y-auto lg:p-6 lg:mt-[90px] mt-7 lg:ml-[0.2%]">
+          <h2 className="text-2xl font-bold mb-4 underline text-center">House Listings</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
             {filteredHouses.map(house => (
               <div key={house.id} className="bg-white rounded-lg shadow-lg p-4">
