@@ -21,29 +21,29 @@ const AboutUs = () => {
       <section className="mt-16 text-center">
         <h2 className="text-3xl font-bold text-gray-900 underline">What We Do</h2>
         <p className="mt-4 text-lg text-gray-600">
-          Our company specializes in renting houses that cater to all needs. Whether you are looking for a cozy cottage or a luxurious villa,
+          Our company specializes in renting houses that cater to all needs. Whether you are looking for a Central Area, Kaduna or a luxurious villa,
           we have something for everyone.
         </p>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <Image src="/housecard1.jpg" alt="House" className="w-full h-40 object-cover rounded-t-lg transform hover:scale-110 transition-transform duration-300 ease-in-out" />
-            <h3 className="text-xl font-semibold text-gray-900 mt-4">Cozy Cottages</h3>
+            <h3 className="text-xl font-semibold text-gray-900 mt-4">Central Area, Kadunas</h3>
             <p className="mt-2 text-gray-600">
               Perfect for a small family or a couple, our cottages offer the perfect blend of comfort and affordability.
             </p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <Image src="/housecard2.jpg" alt="House" className="w-full h-40 object-cover rounded-t-lg transform hover:scale-110 transition-transform duration-300 ease-in-out" />
-            <h3 className="text-xl font-semibold text-gray-900 mt-4">Modern Villas</h3>
+            <h3 className="text-xl font-semibold text-gray-900 mt-4">Modern Villa, Sabo, Kaduna.s</h3>
             <p className="mt-2 text-gray-600">
-              Experience luxury living with our range of modern villas, fully equipped with all the latest amenities.
+              Experience luxury living with our range of Modern Villa, Sabo, Kaduna.s, fully equipped with all the latest amenities.
             </p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <Image src="/housecard.jpg" alt="House" className="w-full h-40 object-cover rounded-t-lg transform hover:scale-110 transition-transform duration-300 ease-in-out" />
-            <h3 className="text-xl font-semibold text-gray-900 mt-4">Family Homes</h3>
+            <h3 className="text-xl font-semibold text-gray-900 mt-4">Abakpa Total, Kadunas</h3>
             <p className="mt-2 text-gray-600">
-              Spacious and comfortable, our family homes are ideal for larger families looking for a place to call home.
+              Spacious and comfortable, our Abakpa Total, Kadunas are ideal for larger families looking for a place to call home.
             </p>
           </div>
         </div>
