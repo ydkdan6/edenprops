@@ -57,6 +57,24 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.overflow-x-scroll::-webkit-scrollbar {
+  height: 8px; /* Scrollbar height for horizontal scroll */
+}
+
+.overflow-x-scroll::-webkit-scrollbar-thumb {
+  background: #f18e30; /* Custom color */
+  border-radius: 4px;
+}
+
+.overflow-x-scroll::-webkit-scrollbar-thumb:hover {
+  background: #f18e30; /* Hover color */
+}
+
+.overflow-x-scroll::-webkit-scrollbar-track {
+  background: #fff; /* Track color */
+}
+
+
 /* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

@@ -128,7 +128,27 @@ const HouseCarousel = () => {
         <Search />
         </div>
         
-      <div className="overflow-x-scroll flex flex-nowrap w-screen h-[345px] scrollbar-hide">
+
+      <div className="relative">
+      <button
+    className="absolute left-2 top-28 transform -translate-y-1/2 bg-orange-500 text-white p-2 rounded-full z-10"
+    onClick={() => {
+      const container = document.querySelector('.overflow-x-scroll');
+      container.scrollBy({ left: -300, behavior: 'smooth' });
+    }}
+  >
+    &#8592;
+  </button>
+  <button
+    className="absolute right-0 top-28 transform -translate-y-1/2 bg-orange-500 text-white p-2 rounded-full z-10"
+    onClick={() => {
+      const container = document.querySelector('.overflow-x-scroll');
+      container.scrollBy({ left: 300, behavior: 'smooth' });
+    }}
+  >
+    &#8594;
+  </button>
+  <div className="overflow-x-scroll flex flex-nowrap w-screen h-[320px] scrollbar-hide">
         <div className="flex flex-nowrap h-full mt-0">
           {houses.map((house) => (
             <HouseCard
@@ -149,6 +169,7 @@ const HouseCarousel = () => {
             />
           ))}
         </div>
+      </div>
       </div>
     </div>
   );
