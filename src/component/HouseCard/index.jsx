@@ -52,7 +52,7 @@ const HouseCard = ({ id, imageSrc, title, description, brief, features, bedrooms
         </div>
       </div>
 
-      <Image src={imageSrc} alt={title} className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300 ease-in-out rounded-lg" />
+      <Image src={imageSrc} alt={title} className="w-full h-56 object-cover transform hover:scale-110 transition-transform duration-300 ease-in-out rounded-lg" />
     </div>
   );
 };

@@ -18,7 +18,7 @@ const HomePage = React.memo(() => {
       
       {/* Other components for routes*/}
       <HouseCarousel  />
-      <Text className='m-3 text-center text-xl underline'>More listing for you</Text>
+      <Text className='m-3 text-left text-base font-normal underline text-primary-black'>More listing for you</Text>
       <PropertyGrid />
       <Sponsors />
       <SearchBtn />
