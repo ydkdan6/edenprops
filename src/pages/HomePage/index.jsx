@@ -4,7 +4,7 @@ import Header from '../../layouts/header';
 import BottomNav from '../../layouts/bottomNavigation';
 import HouseCarousel from '../../component/HouseCarousel';
 import Text from '../../utils/TextInput';
-import HouseList from '../../component/VerticalListing';
+// import HouseList from '../../component/VerticalListing';
 import SearchBtn from '../../layouts/search';
 import Footer from '../../layouts/footer';
 import Sponsors from '../../component/Sponsors';
@@ -16,7 +16,7 @@ function HomePage() {
       
       <Header />
       
-      {/* Other components for routes go here */}
+      {/* Other components for routes*/}
       <HouseCarousel  />
       <Text className='m-1 text-4xl text-center text-xl underline'>More listing for you</Text>
       <PropertyGrid />

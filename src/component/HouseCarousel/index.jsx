@@ -24,7 +24,7 @@ const HouseCarousel = () => {
     {
       id:2,
       imageSrc: '/housecard2.jpg',
-      title: 'Modern Villa, Sabo, Kaduna.',
+      title: 'Modern Villa, Sabo.',
       features: ['Affordable'],
       description: 'A Central Area, Kaduna perfect for a small family. Located in a quiet neighborhood with easy access to local amenities.',
       bedrooms: 2,
