@@ -18,7 +18,7 @@ function HomePage() {
       
       {/* Other components for routes go here */}
       <HouseCarousel  />
-      <Text className='m-1 text-4xl text-center underline'>More listing for you</Text>
+      <Text className='m-1 text-4xl text-center text-xl underline'>More listing for you</Text>
       <PropertyGrid />
       <Sponsors />
       <SearchBtn />
