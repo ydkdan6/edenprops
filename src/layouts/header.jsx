@@ -5,7 +5,7 @@ import './style.css';
 import LocationNotification from '../component/getDistanceFromLocation';
 import Image from '../utils/Image';
 
-const Header = () => {
+const Header = React.memo(() => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -79,6 +79,6 @@ const Header = () => {
     </header>
     
   );
-};
+});
 
 export default Header;

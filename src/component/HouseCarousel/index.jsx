@@ -3,7 +3,7 @@ import Text from '../../utils/TextInput';
 import HouseCard from '../HouseCard';
 import Search from '../../component/Search';
 
-const HouseCarousel = () => {
+const HouseCarousel = React.memo( () => {
   const houses = [
     {
       id: 1,
@@ -173,6 +173,6 @@ const HouseCarousel = () => {
       </div>
     </div>
   );
-};
+});
 
 export default HouseCarousel;

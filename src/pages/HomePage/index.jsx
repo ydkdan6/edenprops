@@ -10,7 +10,7 @@ import Footer from '../../layouts/footer';
 import Sponsors from '../../component/Sponsors';
 import PropertyGrid from '../../component/VerticalListing/housecardlist';
 
-function HomePage() {
+const HomePage = React.memo(() => {
   return (
     <div className='w-full'>
       
@@ -27,6 +27,6 @@ function HomePage() {
       </div>
     
   );
-}
+});
 
 export default HomePage;
