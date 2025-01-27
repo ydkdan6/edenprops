@@ -5,7 +5,7 @@ import { FaBath, FaBed } from 'react-icons/fa';
 const properties = [
   {
     id: 1,
-    imageSrcs: ['/housecard.jpg', 'housecard.jpg', 'housecard.jpg'], // changed from image to imageSrcs
+    imageSrcs: ['/houseImage.jpeg', '/houseImage.jpeg', '/houseImage.jpeg', '/houseImage.jpeg'], // changed from image to imageSrcs
     title: 'Four bedroom duplex',
     description: 'Four bedroom duplex with 2 room boys quarters, gym and...',
     features: ['24/7 Security'],
@@ -21,7 +21,7 @@ const properties = [
   },
   {
     id: 2,
-    imageSrcs: ['/housecard1.jpg'], // changed from image to imageSrcs
+    imageSrcs: ['/houseImage-3.jpg, /houseImage-3.jpg, /houseImage-3.jpg, /houseImage-3.jpg'], // changed from image to imageSrcs
     title: 'The Shore',
     description: 'One Bedroom Apartments: Our one-bedroom apartments are designed for modern...',
     brief: "This is a stunning 3-bedroom apartment located in the heart of the city, offering breathtaking views and modern amenities.",
@@ -37,7 +37,7 @@ const properties = [
   },
   {
     id: 3,
-    imageSrcs: ['/housecard2.jpg'], // changed from image to imageSrcs
+    imageSrcs: ['/houseImage-3.jpeg', 'houseImage-3.jpg'], // changed from image to imageSrcs
     title: "Governor's consent",
     description: 'Newly built 4 Bedroom Fully Detached Duplex With Bq...',
     features: ['good electricity'],

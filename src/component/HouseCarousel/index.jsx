@@ -7,7 +7,7 @@ const HouseCarousel = React.memo( () => {
   const houses = [
     {
       id: 1,
-      imageSrc: '/housecard.jpg', 
+      imageSrc: '/houseImage.jpeg', 
       title: 'Central Area, Kaduna',
       features: ['Affordable'],
       description: 'A beautiful luxury villa located in the heart of the city. Comes with all modern amenities and a stunning view.',
@@ -23,7 +23,7 @@ const HouseCarousel = React.memo( () => {
     },
     {
       id:2,
-      imageSrc: '/housecard2.jpg',
+      imageSrc: '/houseImage-2.jpeg',
       title: 'Modern Villa, Sabo.',
       features: ['Affordable'],
       description: 'A Central Area, Kaduna perfect for a small family. Located in a quiet neighborhood with easy access to local amenities.',
@@ -39,7 +39,7 @@ const HouseCarousel = React.memo( () => {
     },
     {
       id:3,
-      imageSrc: '/housecard1.jpg',
+      imageSrc: '/houseImage-3.jpeg',
       title: 'Abakpa Total, Kaduna',
       features: ['Affordable'],
       description: 'A Central Area, Kaduna perfect for a small family. Located in a quiet neighborhood with easy access to local amenities.',
@@ -57,7 +57,7 @@ const HouseCarousel = React.memo( () => {
     // more houses 
     {
       id:4,
-      imageSrc: '/housecard.jpg',
+      imageSrc: '/houseImage.jpeg',
       title: 'Abakpa Total, Kaduna',
       features: ['Affordable'],
       description: 'A Central Area, Kaduna perfect for a small family. Located in a quiet neighborhood with easy access to local amenities.',
@@ -73,7 +73,7 @@ const HouseCarousel = React.memo( () => {
     },
     {
       id:5,
-      imageSrc: '/housecard2.jpg',
+      imageSrc: '/houseImage-4.jpeg',
       title: 'Abakpa Total, Kaduna',
       features: ['Affordable'],
       description: 'A Central Area, Kaduna perfect for a small family. Located in a quiet neighborhood with easy access to local amenities.',
@@ -89,7 +89,7 @@ const HouseCarousel = React.memo( () => {
     },
     {
       id:6,
-      imageSrc: '/housecard.jpg',
+      imageSrc: '/houseImage-2.jpeg',
       title: 'Abakpa Total, Kaduna',
       features: ['Affordable'],
       description: 'A Central Area, Kaduna perfect for a small family. Located in a quiet neighborhood with easy access to local amenities.',
@@ -105,7 +105,7 @@ const HouseCarousel = React.memo( () => {
     },
     {
       id:7,
-      imageSrc: '/housecard1.jpg',
+      imageSrc: '/houseImage-3.jpeg',
       title: 'Abakpa Total, Kaduna',
       features: ['Affordable'],
       description: 'A Central Area, Kaduna perfect for a small family. Located in a quiet neighborhood with easy access to local amenities.',
